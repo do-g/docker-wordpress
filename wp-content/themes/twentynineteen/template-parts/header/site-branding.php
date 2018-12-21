@@ -27,6 +27,7 @@
 		?>
 			<p class="site-description">
 				<?php echo $description; ?>
+				---
 			</p>
 	<?php endif; ?>
 	<?php if ( has_nav_menu( 'menu-1' ) ) : ?>

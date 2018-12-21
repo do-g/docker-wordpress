@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*
+Theme Name: Twenty Nineteen Child
+Theme URI: https://github.com/WordPress/twentynineteen
+Author: Dorin Gurau
+Author URI: https://dorin.org/
+Description: A new custom theme.
+Template: twentynineteen
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: twentynineteen-child
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+.site-description {
+	color: orange;
+}

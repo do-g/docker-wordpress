@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.7'
 services:
   wordpress:
     depends_on:
@@ -6,12 +6,12 @@ services:
     image: wordpress:5-php7.1-apache
     restart: always
     volumes:
-      - ./wp-content:/var/www/html/wp-content
+      - ./www:/var/www/html
+    ports:
+      - 8080:80
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: rootpass
-    ports:
-      - 8080:80
   db:
     image: mysql:5.7
     restart: always
@@ -26,8 +26,5 @@ services:
     restart: always
     ports:
       - 8000:80
-    environment:
-      PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: rootpass
 volumes:
   db_data: {}
